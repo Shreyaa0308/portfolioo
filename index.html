@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shreya Patil | Frontend Developer</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7fb;
+color:#1f2937;
+overflow-x:hidden;
+}
+
+section{
+padding:90px 8%;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:60px;
+color:#2563eb;
+}
+
+/*================ HEADER ================*/
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#fff;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+z-index:1000;
+}
+
+.logo{
+font-size:30px;
+font-weight:700;
+color:#2563eb;
+}
+
+.logo span{
+color:#111827;
+}
+
+nav a{
+text-decoration:none;
+margin-left:30px;
+font-weight:500;
+color:#374151;
+transition:.3s;
+}
+
+nav a:hover{
+color:#2563eb;
+}
+
+/*================ HERO ================*/
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:60px;
+padding-top:120px;
+}
+
+.hero-text{
+flex:1;
+}
+
+.hero-text h4{
+font-size:22px;
+color:#2563eb;
+margin-bottom:10px;
+}
+
+.hero-text h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+.hero-text h2{
+font-size:32px;
+margin-bottom:20px;
+}
+
+.hero-text h2 span{
+color:#2563eb;
+}
+
+.hero-text p{
+font-size:17px;
+line-height:30px;
+color:#555;
+margin-bottom:35px;
+}
+
+.buttons{
+display:flex;
+gap:20px;
+margin-bottom:35px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+.outline{
+background:white;
+border:2px solid #2563eb;
+color:#2563eb;
+}
+
+.outline:hover{
+background:#2563eb;
+color:white;
+}
+
+.social{
+display:flex;
+gap:18px;
+}
+
+.social a{
+width:48px;
+height:48px;
+display:flex;
+justify-content:center;
+align-items:center;
+background:white;
+border-radius:50%;
+color:#2563eb;
+text-decoration:none;
+font-size:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.social a:hover{
+background:#2563eb;
+color:white;
+}
+
+.hero-image{
+flex:1;
+display:flex;
+justify-content:center;
+}
+
+.hero-image img{
+width:360px;
+max-width:100%;
+}
+
+/*================ ABOUT ================*/
+
+#about{
+background:white;
+}
+
+.about-container{
+display:grid;
+grid-template-columns:1fr 2fr;
+gap:50px;
+align-items:center;
+}
+
+.about-image img{
+width:320px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.about-content h3{
+font-size:32px;
+margin-bottom:20px;
+}
+
+.about-content p{
+line-height:30px;
+color:#555;
+margin-bottom:20px;
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+margin-top:30px;
+}
+
+.about-card{
+background:#f8fafc;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.about-card i{
+font-size:35px;
+color:#2563eb;
+margin-bottom:15px;
+}
+
+.about-card h4{
+margin-bottom:8px;
+}
+/*=========================
+PROJECTS
+=========================*/
+
+#projects{
+background:#f8fafc;
+}
+
+.project-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.project-card{
+background:#fff;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+}
+
+.project-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.project-content{
+padding:25px;
+}
+
+.project-content h3{
+margin-bottom:15px;
+color:#2563eb;
+}
+
+.project-content p{
+line-height:28px;
+color:#555;
+margin-bottom:20px;
+}
+
+/*=========================
+RESUME
+=========================*/
+
+#resume{
+background:white;
+text-align:center;
+}
+
+.resume-box{
+max-width:700px;
+margin:auto;
+background:#f8fafc;
+padding:50px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.resume-box i{
+font-size:60px;
+color:#2563eb;
+margin-bottom:20px;
+}
+
+.resume-box h3{
+margin-bottom:15px;
+font-size:30px;
+}
+
+.resume-box p{
+color:#555;
+line-height:30px;
+margin-bottom:30px;
+}
+
+/*=========================
+CONTACT
+=========================*/
+
+#contact{
+background:#f8fafc;
+}
+
+.contact-container{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.contact-info h3{
+font-size:32px;
+margin-bottom:20px;
+}
+
+.contact-info p{
+margin-bottom:18px;
+line-height:30px;
+color:#555;
+}
+
+.contact-info i{
+color:#2563eb;
+margin-right:10px;
+}
+
+.contact-form input,
+.contact-form textarea{
+width:100%;
+padding:15px;
+margin-bottom:20px;
+border:1px solid #ddd;
+border-radius:10px;
+font-size:16px;
+outline:none;
+}
+
+.contact-form textarea{
+resize:none;
+}
+
+/*=========================
+FOOTER
+=========================*/
+
+footer{
+background:#2563eb;
+padding:30px;
+text-align:center;
+color:white;
+}
+
+footer p{
+margin-bottom:20px;
+font-size:17px;
+}
+
+footer .social{
+justify-content:center;
+}
+
+footer .social a{
+background:white;
+color:#2563eb;
+}
+
+/*=========================
+RESPONSIVE
+=========================*/
+
+@media(max-width:992px){
+
+.hero,
+.about-container,
+.contact-container{
+grid-template-columns:1fr;
+display:grid;
+text-align:center;
+}
+
+.hero{
+padding-top:150px;
+}
+
+.hero-image{
+margin-top:40px;
+}
+
+.about-image{
+margin:auto;
+}
+
+.about-grid{
+grid-template-columns:1fr;
+}
+
+.buttons{
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.social{
+justify-content:center;
+}
+
+nav{
+display:none;
+}
+
+}
+
+@media(max-width:768px){
+
+.title{
+font-size:32px;
+}
+
+.hero-text h1{
+font-size:42px;
+}
+
+.hero-text h2{
+font-size:25px;
+}
+
+.hero-image img{
+width:280px;
+}
+
+.about-image img{
+width:250px;
+}
+
+.resume-box{
+padding:30px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+Shreya<span>.</span>
+</div>
+
+<nav>
+
+<a href="#home">Home</a>
+
+<a href="#about">About</a>
+
+<a href="#skills">Skills</a>
+
+<a href="#projects">Projects</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h4>Hello, I'm</h4>
+
+<h1>Shreya Patil</h1>
+
+<h2><span id="typing">Frontend Developer</span></h2>
+
+<p>
+
+I am a passionate Frontend Developer who enjoys creating responsive and modern websites using HTML, CSS, JavaScript, and React. I love learning new technologies and building real-world projects to improve my skills.
+
+</p>
+
+<div class="buttons">
+
+<a href="#contact" class="btn">Hire Me</a>
+
+<a href="resume.html" class="btn outline">View Resume</a>
+
+</div>
+
+<div class="social">
+
+<a href="https://github.com/shreyaa0308" target="_blank">
+    <i class="fab fa-github"></i>
+</a>
+
+<a href="YOUR_LINKEDIN_PROFILE_URL" target="_blank">
+    <i class="fab fa-linkedin"></i>
+</a>
+
+<a href="https://www.instagram.com/shreyaa.patil03/" target="_blank">
+    <i class="fab fa-instagram"></i>
+</a>
+
+<a href="mailto:shreyapatil5525@gmail.com">
+    <i class="fas fa-envelope"></i>
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="logo.png" alt="Developer">
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="about-container">
+
+<div class="about-image">
+
+<img src="shreya.jpg" alt="Shreya">
+
+</div>
+
+<div class="about-content">
+
+<h3>Frontend Developer</h3>
+
+<p>
+
+I'm currently pursuing a Diploma in Computer Engineering and have a strong interest in Frontend Development. I enjoy creating attractive and responsive websites while continuously learning modern web technologies.
+
+</p>
+
+<p>
+
+My goal is to become a Full Stack Developer and work on impactful software projects that solve real-world problems.
+
+</p>
+
+<div class="about-grid">
+
+<div class="about-card">
+
+<i class="fas fa-code"></i>
+
+<h4>Web Development</h4>
+
+<p>HTML • CSS • JavaScript</p>
+
+</div>
+
+<div class="about-card">
+
+<i class="fas fa-graduation-cap"></i>
+
+<h4>Education</h4>
+
+<p>Diploma Computer Engineering</p>
+
+</div>
+
+<div class="about-card">
+
+<i class="fab fa-react"></i>
+
+<h4>Currently Learning</h4>
+
+<p>React • Java • Python</p>
+
+</div>
+
+<div class="about-card">
+
+<i class="fas fa-briefcase"></i>
+
+<h4>Looking For</h4>
+
+<p>Frontend Internship</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= SKILLS ================= -->
+<section id="skills">
+
+<h2 class="title">My Skills</h2>
+
+<div class="skills-container">
+
+<div class="skill">
+
+<h3>HTML5</h3>
+
+<div class="progress">
+<div class="progress-bar html"></div>
+</div>
+
+<p>85%</p>
+
+</div>
+
+<div class="skill">
+
+<h3>CSS3</h3>
+
+<div class="progress">
+<div class="progress-bar css"></div>
+</div>
+
+<p>75%</p>
+
+</div>
+
+<div class="skill">
+
+<h3>JavaScript</h3>
+
+<div class="progress">
+<div class="progress-bar javascript"></div>
+</div>
+
+<p>85%</p>
+
+</div>
+
+<div class="skill">
+
+<h3>React JS</h3>
+
+<div class="progress">
+<div class="progress-bar react"></div>
+</div>
+
+<p>25%</p>
+
+</div>
+
+<div class="skill">
+
+<h3>Java</h3>
+
+<div class="progress">
+<div class="progress-bar java"></div>
+</div>
+
+<p>70%</p>
+
+</div>
+
+<div class="skill">
+
+<h3>Python</h3>
+
+<div class="progress">
+<div class="progress-bar python"></div>
+</div>
+
+<p>85%</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= EDUCATION ================= -->
+
+<section id="education">
+
+<h2 class="title">Education</h2>
+
+<div class="education-container">
+
+<div class="education-card">
+
+<i class="fas fa-user-graduate"></i>
+
+<h3>Diploma in Computer Engineering</h3>
+
+<h4>Pimpri Chinchwad Polytechnic</h4>
+
+<p><strong>2023 - Present</strong></p>
+
+<p>
+Currently pursuing a Diploma in Computer Engineering with a focus on Web Development, Programming, and Software Development.
+</p>
+
+</div>
+
+<div class="education-card">
+
+<i class="fas fa-school"></i>
+
+<h3>Secondary School (SSC)</h3>
+
+<h4>C.E.S. Prerna High School</h4>
+
+<p><strong>2023</strong></p>
+
+<p>
+Completed SSC with <strong>93.40%</strong> and built a strong academic foundation.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services">
+
+<h2 class="title">My Services</h2>
+
+<div class="service-container">
+
+<div class="service-card">
+
+<i class="fas fa-code"></i>
+
+<h3>Frontend Development</h3>
+
+<p>
+Creating responsive, modern, and user-friendly websites using HTML, CSS, JavaScript, and React.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fas fa-mobile-screen-button"></i>
+
+<h3>Responsive Design</h3>
+
+<p>
+Building websites that work smoothly on desktops, tablets, and mobile devices.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fas fa-palette"></i>
+
+<h3>UI Design</h3>
+
+<p>
+Designing clean, attractive, and intuitive user interfaces with a focus on user experience.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fas fa-bug"></i>
+
+<h3>Bug Fixing</h3>
+
+<p>
+Finding and fixing HTML, CSS, and JavaScript issues to improve website quality and performance.
+</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= PROJECTS ================= -->
+
+
+
+<!-- ================= RESUME ================= -->
+
+<section id="resume">
+
+<h2 class="title">Resume</h2>
+
+<div class="resume-box">
+
+<i class="fas fa-file-pdf"></i>
+
+<h3>Download My Resume</h3>
+
+<p>
+You can view or download my resume to learn more about my education, skills, and projects.
+</p>
+
+<div class="buttons">
+
+<a href="resume.html" class="btn">
+View Resume
+</a>
+
+<a href="Resume.pdf" download class="btn outline">
+Download Resume
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<h2 class="title">Contact Me</h2>
+
+<div class="contact-container">
+
+<div class="contact-info">
+
+<h3>Let's Connect!</h3>
+
+<p>
+I'm looking for internship opportunities and would love to collaborate on exciting frontend projects.
+</p>
+
+<p><i class="fas fa-envelope"></i> shreyapatil5525@gmail.com</p>
+
+<p><i class="fas fa-phone"></i> +91 8208323345</p>
+
+<p><i class="fas fa-location-dot"></i> Pune, Maharashtra</p>
+
+</div>
+
+<div class="contact-form">
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<input type="text" placeholder="Subject" required>
+
+<textarea rows="6" placeholder="Your Message"></textarea>
+
+<button type="submit" class="btn">
+
+Send Message
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<p>
+
+© 2026 <strong>Shreya Patil</strong> | Frontend Developer
+
+</p>
+
+<div class="social">
+
+<a href="https://github.com/shreyaa0308" target="_blank">
+<i class="fab fa-github"></i>
+</a>
+
+<a href="https://www.linkedin.com/in/shreya-patil/" target="_blank">
+<i class="fab fa-linkedin"></i>
+</a>
+
+<a href="https://www.instagram.com/shreyaa.patil03/" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="mailto:shreyapatil5525@gmail.com">
+<i class="fas fa-envelope"></i>
+</a>
+
+</div>
+
+</footer>
+<script>
+
+// ================= Typing Animation =================
+
+const words = [
+"Frontend Developer",
+"Web Designer",
+"React Learner",
+"Programmer"
+];
+
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+const typing = document.getElementById("typing");
+
+function typeEffect(){
+
+let currentWord = words[wordIndex];
+
+if(!isDeleting){
+
+typing.textContent = currentWord.substring(0,charIndex++);
+
+if(charIndex > currentWord.length){
+
+isDeleting = true;
+
+setTimeout(typeEffect,1000);
+
+return;
+
+}
+
+}else{
+
+typing.textContent = currentWord.substring(0,charIndex--);
+
+if(charIndex < 0){
+
+isDeleting = false;
+
+wordIndex++;
+
+if(wordIndex === words.length){
+
+wordIndex = 0;
+
+}
+
+}
+
+}
+
+setTimeout(typeEffect,isDeleting ? 70 : 120);
+
+}
+
+typeEffect();
+
+
+// ================= Sticky Header =================
+
+window.addEventListener("scroll",function(){
+
+const header=document.querySelector("header");
+
+header.classList.toggle("sticky",window.scrollY>50);
+
+});
+
+
+// ================= Active Menu =================
+
+const sections=document.querySelectorAll("section");
+
+const navLinks=document.querySelectorAll("header nav a");
+
+window.addEventListener("scroll",()=>{
+
+let current="";
+
+sections.forEach(section=>{
+
+const sectionTop=section.offsetTop-120;
+
+const sectionHeight=section.clientHeight;
+
+if(pageYOffset>=sectionTop){
+
+current=section.getAttribute("id");
+
+}
+
+});
+
+navLinks.forEach(link=>{
+
+link.classList.remove("active");
+
+if(link.getAttribute("href")==="#"+current){
+
+link.classList.add("active");
+
+}
+
+});
+
+});
+
+
+// ================= Scroll Animation =================
+
+const cards=document.querySelectorAll(
+".about-card,.skill-box,.education-card,.service-card,.project-card"
+);
+
+window.addEventListener("scroll",()=>{
+
+cards.forEach(card=>{
+
+const position=card.getBoundingClientRect().top;
+
+const screen=window.innerHeight;
+
+if(position<screen-100){
+
+card.style.opacity="1";
+
+card.style.transform="translateY(0)";
+
+}
+
+});
+
+});
+
+cards.forEach(card=>{
+
+card.style.opacity="0";
+
+card.style.transform="translateY(50px)";
+
+card.style.transition=".8s";
+
+});
+
+
+// ================= Contact Form =================
+
+const form=document.querySelector("form");
+
+form.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert("Thank You! Your message has been sent successfully.");
+
+form.reset();
+
+});
+
+
+// ================= Smooth Button Hover =================
+
+const buttons=document.querySelectorAll(".btn");
+
+buttons.forEach(btn=>{
+
+btn.addEventListener("mouseenter",()=>{
+
+btn.style.transform="translateY(-5px)";
+
+});
+
+btn.addEventListener("mouseleave",()=>{
+
+btn.style.transform="translateY(0)";
+
+});
+
+});
+
+</script>
+
+</body>
+
+</html>
